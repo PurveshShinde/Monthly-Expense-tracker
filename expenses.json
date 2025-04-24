@@ -1,15 +1,9 @@
 [
     {
-        "date": "2025-04-01",
-        "amount": 200.0,
+        "date": "2025-04-24",
+        "amount": 1000.0,
         "category": "Food",
-        "description": "Lunch"
-    },
-    {
-        "date": "2025-04-02",
-        "amount": 150.0,
-        "category": "Transport",
-        "description": "Taxi fare"
+        "description": "I got lunch for myself. "
     },
     {
         "date": "2025-04-24",
