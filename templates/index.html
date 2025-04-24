@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <meta charset="UTF-8">
     <title>Expense Tracker</title>
     <style>
         body { font-family: Arial; padding: 20px; }
         table, th, td { border: 1px solid #ddd; border-collapse: collapse; padding: 8px; }
         th { background-color: #f2f2f2; }
+        .summary { margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -19,7 +21,17 @@
         <button type="submit">Add</button>
     </form>
 
-    <h2>Expenses</h2>
+    <div class="summary">
+        <h3>Total Expenses: ₹{{ total }}</h3>
+        <h4>Monthly Summary</h4>
+        <ul>
+            {% for month, amt in monthly_summary.items() %}
+                <li>{{ month }}: ₹{{ amt }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h2>All Expenses</h2>
     <table>
         <tr>
             <th>Date</th><th>Amount</th><th>Category</th><th>Description</th>
