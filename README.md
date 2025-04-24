@@ -1,5 +1,7 @@
 Expense Tracker Web App
-A simple web application to track and manage your personal expenses. Built with Flask, this application allows you to add, edit, delete, and view your expenses. It stores the data in a JSON file and provides basic statistics such as total expenses and monthly breakdowns.
+A simple web application to track and manage your personal expenses.
+
+Built with Flask, this application allows you to add, edit, delete, and view your expenses. It stores the data in a JSON file and provides basic statistics such as total expenses and monthly breakdowns.
 
 Features
 Add new expenses: Track the date, amount, category, and description of each expense.
@@ -40,13 +42,13 @@ Edit
 cd expense-tracker
 Install Required Dependencies: Make sure you have Python installed. Then, run the following to install the required Flask package:
 
-nginx
+bash
 Copy
 Edit
 pip install flask
 Run the Flask Application: To start the application, run:
 
-nginx
+bash
 Copy
 Edit
 python app.py
@@ -59,7 +61,7 @@ http://127.0.0.1:5000/
 You should see the Expense Tracker Web App running locally.
 
 File Structure
-bash
+plaintext
 Copy
 Edit
 /expense-tracker
@@ -94,7 +96,7 @@ View Summary:
 The total expenses and monthly breakdown are displayed at the top of the page.
 
 Future Improvements
-User authentication: Add login/logout functionality so that multiple users can track their expenses.
+User Authentication: Add login/logout functionality so that multiple users can track their expenses.
 
 Data Persistence: Use a database like SQLite or MySQL instead of a JSON file for better scalability.
 
@@ -104,4 +106,3 @@ Category Filters: Allow users to filter expenses by category.
 
 Contributing
 If you'd like to contribute, feel free to fork the repository and submit a pull request. Please make sure to follow the code style and include tests for any new features.
-
