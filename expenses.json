@@ -10,5 +10,11 @@
         "amount": 150.0,
         "category": "Transport",
         "description": "Taxi fare"
+    },
+    {
+        "date": "2025-04-24",
+        "amount": 500.0,
+        "category": "Book",
+        "description": "I bought some books for myself "
     }
 ]
